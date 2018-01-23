@@ -13,14 +13,14 @@ int check (int x){
         return 0;
 }
 
-int sum (int x){
+void sum (int x){
     total +=x;
 }
 
 int main(){
     cout << "Enter the limit(integer)> ";
     int limit=1000, c=1;
-    //cin>> limit;
+    cin>> limit;
 
     for( ;c<limit; c++){
         if(check(c)==1)
@@ -29,7 +29,7 @@ int main(){
             continue;
     }
 
-    cout<<"The total sum of the multiples of 3 and 5 till "<<limit<<" is -> "<<total<"\n\n\n\n";
+    cout<<"The total sum of the multiples of 3 and 5 to "<<limit<<" is -> "<<total<"\n\n\n\n";
 
     return 0;
 }
